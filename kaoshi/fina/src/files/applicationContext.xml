@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans>
+  <bean id="finaDao" class="cn.kgc.tangcco.zhangdi.fina.dao.impl.FinaDaoImpl"/>
+  <bean id="finaService" class="cn.kgc.tangcco.zhangdi.fina.service.impl.FinaServiceImpl">
+    <property name="finaDao" ref="finaDao"/>
+  </bean>
+</beans>
